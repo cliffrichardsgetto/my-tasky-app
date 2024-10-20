@@ -5,12 +5,15 @@
 
 
 
-        <link href="./index.css" rel="stylesheet"/>
+       <!--- <link href="./index.css" rel="stylesheet"/>-->
+        <link href="./index.css" rel="stylesheet" />
         <!-- copy  from  bootstrap.com -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         </head>
-        <body onload="loadInitialData()">
+        <!--<body onload="loadInitialData()"
+        <body onload="loadInitialData()">-->
+        <body onload="loadInitialData()">  
         <!-- button-->
         <!-- Btrn  on  small screen  size -->
         <div class="add__new__btn__mobile__only d-md-none">
@@ -82,10 +85,10 @@
                     </form> 
                    </div>
                   <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" 
-                  data-bs-dismiss="modal">Close</button>
-                  <button type="submit"
-                  class="btn btn-primary" onclick="handleSubmit()">Save changes</button>
+                    <button type="button" class="btn btn-secondary" 
+                    data-bs-dismiss="modal">Close</button>
+                    <button type="submit"
+                     class="btn btn-primary" onclick="handleSubmit()">Save changes</button>
                 </div>
               </div>
             </div>
@@ -98,7 +101,7 @@
                     <i class="fa-light fa-plus mr-4"></i>Add New Item</button>        
           </div> -->
            <!-- Modal  COPIED  FROM  BOOTSTRAP  LAUNCH  MODAL-->
-         <div class="modal fade" id="ShowTask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="ShowTask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <!-- vertically  centered   from  getbootstrap.com-->
            <div class="modal-dialog modal-lg">
              <div class="modal-content">
@@ -220,11 +223,9 @@
                    <i class="fa-light fa-plus mr-4"></i>Add New Item</button>
                    <!-- Button trigger modal -->
 
-
-
-                  </div>
+              </div>
             </div>
-          </nav>
+        </nav>
  
         <div class="container">
           <section class="mt-5">
@@ -235,11 +236,14 @@
                   
                 <!--<div class="input-group flex-nowrap"-->
                   <div class="input-group flex-nowrap shadow-lg rounded">
-                  <input type="search" class="form-control" placeholder="Search Task Here ... "  aria-label="Search" aria-describedby="basic-addon1"/>
+                  <input type="search" class="form-control" placeholder="Search Task Here ... "  aria-label="Search Task" aria-describedby="basic-addon1"
+                  oninput="searchTask.apply(this,arguments)"
+                  />
                   <span class="input-group-text" id="addon-wrapping">
                    <i class="fas fa-serach"></i>
                   </span>
                 </div>
+              </div>
               </div>
              <!--<div class="col-sm-12 col-md-6">
                 --<div class="input-group flex-nowrap"--
@@ -254,9 +258,9 @@
           </section>  
           <!--Card Section-->
           <section class="mt-3">
-            <div class="row task_contents">
-              <h1> Hey we  will  be  getting  cards  over  her</h1>
-            </div>
+            <div class="row task__contents">
+            <!-- <h1> Hey we  will  be  getting  cards  over  her</h1>
+            </div> -->
           </section>
         </div> 
             <!--  <div class="col-md-6 col-sm-12">
@@ -271,11 +275,28 @@
           
         </div> -->        
        <script src="./index.js"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html> 
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body> 
-</html>
+</html>-->
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
